@@ -1,0 +1,33 @@
+    Container(
+              child: Row(
+                children: [
+                  Container(
+                    width: 225,
+                    color: Colors.blue,
+                    height: 360,
+                  ),
+                  Container(
+                    width: 225,
+                    color: Colors.yellow,
+                    height: 360,
+                  ),
+                ],
+              ),
+            ),
+            ///////////////bellow
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    width: 225,
+                    color: Colors.green,
+                    height: 360,
+                  ),
+                  Container(
+                    width: 225,
+                    color: Colors.red,
+                    height: 360,
+                  ),
+                ],
+              ),
+            ),

@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+import 'package:samplecode/models/contact.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    List<Contact> allContact = [];
+    allContact.add(Contact(name: "Yusuf", major: "IT"));
+    allContact.add(Contact(name: "Ali", major: "IT"));
+
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("home Screen"),
+        ),
+        body: Container(
+          margin: EdgeInsets.all(5),
+          //column_all
+          child: Column(
+            children:
+
+                ///1111
+                allContact.map((x) => buildContact(context, x)).toList(),
+            /////222
+          ),
+        ));
+  }
+
+  Widget buildContact(BuildContext ctx, Contact c) {
+    return Container(
+      color: Colors.blue,
+      width: MediaQuery.of(ctx).size.width,
+      padding: EdgeInsets.all(5),
+      margin: EdgeInsets.symmetric(vertical: 5),
+      height: 100,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(
+            children: [
+              Container(
+                //Cont_text
+                // color: Colors.yellow,
+                // height: 40,
+                width: (MediaQuery.of(ctx).size.width / 3 * 2) - 10,
+                child: Text(c.name),
+              ),
+              //cont_icon
+              Container(
+                  color: Colors.red,
+                  width: (MediaQuery.of(ctx).size.width / 3) - 10,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [Icon(Icons.account_balance), Icon(Icons.person)],
+                  )),
+            ],
+          ),
+          Container(
+            //Cont_textIT
+            // color: Colors.yellow,
+            // height: 40,
+            width: (MediaQuery.of(ctx).size.width / 3 * 2) - 10,
+            child: Text(c.major),
+          ),
+        ],
+      ),
+    );
+  }
+}

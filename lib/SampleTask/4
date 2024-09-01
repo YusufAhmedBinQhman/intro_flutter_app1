@@ -1,0 +1,81 @@
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        // appBar: AppBar(
+        //   title: Text("home Screen"),
+        // ),
+        body: Column(
+      children: [
+        Container(
+          color: const Color.fromARGB(255, 103, 96, 96),
+          height: MediaQuery.of(context).size.height / 2,
+          child: Row(
+            children: [
+              ///111111
+              Container(
+                  color: Colors.red,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Names Male students:",
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      Text("yusuf"),
+                      Text("Nooh"),
+                      Text("Ahmed"),
+                    ],
+                  )),
+              ////////////2222
+              Container(
+                  color: Colors.yellow,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Column(
+                    children: [
+                      Text("Names Female students:"),
+                      Text("yusuf"),
+                      Text("Nooh"),
+                      Text("Ahmed"),
+                    ],
+                  )),
+            ],
+          ),
+        ),
+        /////////below
+        Container(
+          color: Colors.blue,
+          height: MediaQuery.of(context).size.height / 2,
+          child: Row(
+            children: [
+              ///3333
+              Container(
+                  color: Colors.green,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Column(
+                    children: [
+                      Text("yusuf"),
+                      Text("Nooh"),
+                      Text("Ahmed"),
+                    ],
+                  )),
+              ////////////4444
+              Container(
+                  color: Colors.greenAccent,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Column(
+                    children: [
+                      Text("yusuf"),
+                      Text("Nooh"),
+                      Text("Ahmed"),
+                    ],
+                  )),
+            ],
+          ),
+        ),
+      ],
+    ));
+  }
+}
