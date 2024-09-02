@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intro_flutter_app1/Pages/ListView.dart';
+import 'package:intro_flutter_app1/Pages/TaskUIhome.dart';
 import 'package:intro_flutter_app1/Pages/home_screen.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme:
           ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.white)),
-      home: HomeScreen(),
+      home: TaskUIHome(),
     );
   }
 }
