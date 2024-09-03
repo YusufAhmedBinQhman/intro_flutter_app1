@@ -17,19 +17,25 @@ class TaskUIHome extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    "data",
+                    "Flutter Ui",
                     style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15,
                         fontWeight: FontWeight.w500),
                   ),
                   Spacer(),
-                  CircleAvatar()
+                  CircleAvatar(
+                    backgroundColor: Colors.orange,
+                  )
                 ],
               ),
               //main text
               Text(
-                "dldshldladata",
+                "WELCOME TO THE SIMPLE SHOP,",
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                " IT FINDE YOUR PRODUCTS",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -55,7 +61,7 @@ class TaskUIHome extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "jgdsnlgsdn;dsngapfwfameg;lfdskfnn;w",
+                            "7 Ways to take care of your product",
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
@@ -93,7 +99,7 @@ class TaskUIHome extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Color.fromARGB(255, 161, 204, 210),
                                 borderRadius: BorderRadius.circular(15)),
-                            child: Icon(Icons.home)),
+                            child: Icon(Icons.animation)),
                         SizedBox(
                           height: 10,
                         ),
